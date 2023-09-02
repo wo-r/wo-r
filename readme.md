@@ -4,7 +4,7 @@ Thanks for stopping by to view my content, it really brings joy to me that other
 <br>
 
 ### Skills
-The table below provides the percentage of knowelage I have of that specific skill as long with its corresponding name, if its low then its probably not good, and if its high then its probably very good.
+The table below provides the percentage of knowledge I have of that specific skill as long with its corresponding name, if its low then its probably not good, and if its high then its probably very good.
 <table>
   <tr>
     <td align=center>87%</td>
