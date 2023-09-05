@@ -5,11 +5,12 @@ Thanks for stopping by to view my content, it really brings joy to me that other
 
 ### Skills
 The table below provides the percentage of knowledge I have of that specific skill as long with its corresponding name, if its low then its probably not good, and if its high then its probably very good.
-<table>
+<table align=center>
   <tr>
     <td align=center>87%</td>
     <td align=center>94%</td>
     <td align=center>89%</td>
+    <td align=center>56%></td> 
     <td align=center>96%</td>
     <td align=center>87%</td>
     <td align=center>76%</td>
@@ -21,6 +22,7 @@ The table below provides the percentage of knowledge I have of that specific ski
     <td>Javascript</td>
     <td>HTML</td>
     <td>CSS</td>
+    <td>Swiftcss</td>
     <td>PHP</td>
     <td>Lua</td>
     <td>Python</td>
@@ -32,8 +34,14 @@ The table below provides the percentage of knowledge I have of that specific ski
 
 <br>
 
-### Others
-This is where you can see things like my stats and whatever else I decide I want to put in this spot.
+### Statistics
+> **Note**  
+> Top languages do not represent my skill level like above, these show my overall use of each language in my projects. Please only follow my skills based off my skill percentages above.
 <br>
 
-[![stats](https://github-readme-stats.vercel.app/api?username=wo-r&bg_color=14141b&title_color=8F5E6A&icon_color=8F5E6A&text_color=E7B7C3&custom_title=My%20stats&count_private=true&include_all_commits=true&show_icons=true&hide_border=true&border_radius=0&text_bold=false)](https://github.com/wo-r)
+<div align=center>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=wo-r&layout=compact&bg_color=14141b&title_color=8F5E6A&icon_color=8F5E6A&text_color=E7B7C3&custom_title=Top%20Languages&count_private=true&include_all_commits=true&show_icons=true&hide_border=true&border_radius=0&text_bold=false">
+  <img src="https://github-readme-stats.vercel.app/api?username=wo-r&bg_color=14141b&title_color=8F5E6A&icon_color=8F5E6A&text_color=E7B7C3&custom_title=My%20stats&count_private=true&include_all_commits=true&show_icons=true&hide_border=true&border_radius=0&text_bold=false">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=wo-r&repo=fallout-4-codes&bg_color=14141b&title_color=8F5E6A&icon_color=8F5E6A&text_color=E7B7C3&custom_title=My%20stats&count_private=true&include_all_commits=true&show_icons=true&hide_border=true&border_radius=0&text_bold=false">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=wo-r&repo=Themius&bg_color=14141b&title_color=8F5E6A&icon_color=8F5E6A&text_color=E7B7C3&custom_title=My%20stats&count_private=true&include_all_commits=true&show_icons=true&hide_border=true&border_radius=0&text_bold=false">
+</div>
