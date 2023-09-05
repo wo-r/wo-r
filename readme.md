@@ -10,7 +10,7 @@ The table below provides the percentage of knowledge I have of that specific ski
     <td align=center>87%</td>
     <td align=center>94%</td>
     <td align=center>89%</td>
-    <td align=center>56%></td> 
+    <td align=center>56%</td> 
     <td align=center>96%</td>
     <td align=center>87%</td>
     <td align=center>76%</td>
