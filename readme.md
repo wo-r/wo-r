@@ -4,7 +4,7 @@ I'm a self taught programmer. Everything I have learned so far has been complete
 ## Languages
 I mostly use `Javascript`, `HTML`, `CSS`, and `PHP`. My other languages I have messed with are `Swiftcss`, `Lua`, `Python`, `SQL`, `C++`, and `BrainF**k`. These other languages will have very varied levels of skill.
 
-<a href="https://github.com/wo-r"><img align="left" src="[https://github-readme-stats.vercel.app/api?username=wo-r&bg_color=14141b&title_color=8F5E6A&icon_color=8F5E6A&text_color=E7B7C3&custom_title=Profile%20stats&count_private=true&include_all_commits=true&show_icons=true&hide_border=true&border_radius=0&text_bold=false](https://github-readme-stats.vercel.app/api?username=wo-r&bg_color=14141b&title_color=8F5E6A&icon_color=8F5E6A&text_color=E7B7C3&custom_title=Profile%20stats&count_private=true&include_all_commits=true&show_icons=true&hide_border=true&border_radius=0&text_bold=false)" width="50%" height="200rem"/></a>
+<a href="https://github.com/wo-r"><img align="left" src="https://github-readme-stats.vercel.app/api?username=wo-r&bg_color=14141b&title_color=8F5E6A&icon_color=8F5E6A&text_color=E7B7C3&custom_title=Profile%20stats&count_private=true&include_all_commits=true&show_icons=true&hide_border=true&border_radius=0&text_bold=false" width="50%" height="200rem"/></a>
 <a href="https://github.com/wo-r"><img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=wo-r&layout=compact&bg_color=14141b&title_color=8F5E6A&icon_color=8F5E6A&text_color=E7B7C3&custom_title=Frequent%20languages&count_private=true&include_all_commits=true&show_icons=true&hide_border=true&border_radius=0&text_bold=false" width="41.3%" height="200rem"/></a>
 
 <br><br><br><br><br><br><br><br><br><br>
