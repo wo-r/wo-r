@@ -9,13 +9,13 @@
     --background: #171717;
     --primary: #d8d2b6;
     --secondary: #c8bc89;
-    --accent: #ecdd69;
+    --accent: #c3bd90;
 
     /*rbga*/
     --background-rgba: 23, 23, 23;
     --primary-rgba: 216, 210, 182;
     --secondary-rgba: 200, 188, 137;
-    --accent-rgba: 236, 221, 105;
+    --accent-rgba: 195, 189, 144;
 }
 
 /*this may or may not be used*/
