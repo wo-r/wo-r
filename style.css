@@ -3,6 +3,7 @@
     scroll-behavior: smooth;
 }
 
+/*this may or may not be used*/
 .theme-dark {
     --text: white;
     --opptext: black;
@@ -16,9 +17,10 @@
     --primary-rgba: 216, 210, 182;
     --secondary-rgba: 200, 188, 137;
     --accent-rgba: 195, 189, 144;
+
+    --bg: url("./bg/dark-bg.png");
 }
 
-/*this may or may not be used*/
 .theme-light {
     --text: black;
     --opptext: white;
@@ -32,6 +34,8 @@
     --primary-rgba: 73, 67, 39;
     --secondary-rgba: 118, 106, 55;
     --accent-rgba: 150, 134, 19;
+
+    --bg: url("./bg/light-bg.png");
 }
 
 
@@ -41,6 +45,13 @@ html, body {
     font-family: "Assistant", monospace, sans-serif;
     background: var(--background);
     color: var(--text);
+    position: absolute;
+    inset: 0px;
+}
+
+.overlapped_image {
+    background-position: 100% 100%;
+    background-image: var(--bg);
 }
 
 ::selection {

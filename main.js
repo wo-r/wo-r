@@ -2,7 +2,10 @@
     "use strict";
 
     $(document).ready(function() {
-        $("[canripple]").on("click", function(event) {  
+        /**
+         * Invokes ripples on the specified element with attribute [canripple].
+         */
+        $("[canripple]").on("mousedown", function(event) {  
             const item = $(this);
           
             const circle = $("<span></span>");
@@ -26,10 +29,23 @@
           
             item.append(circle);
         });
+
+        $("[goto]").on("click", function (event) {
+            console.log($(this).attr("goto"))
+            // link
+            if ($(this).attr("goto").includes("//"))
+                window.open($(this).attr("goto"), "_blank")
+            else if ($(this).attr("goto").includes("/") && !$(this).attr("goto").includes("//"))
+                window.location.href = $(this).attr("goto");
+            else if ($(this).attr("goto").includes("#")) {
+                event.preventDefault();
+                let offset = $(`${$(this).attr("goto")}`).offset().top;
+                $('html, body').animate({
+                    scrollTop: offset
+                }, 800)
+            }
+        })
+
+        $("#copyright-date").append(new Date().getFullYear())
     });
-      
-
-
-
-
 })();
