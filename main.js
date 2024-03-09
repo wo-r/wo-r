@@ -30,6 +30,9 @@
             item.append(circle);
         });
 
+        /**
+         * If an element with [goto] is clicked it will check for these below
+         */
         $("[goto]").on("click", function (event) {
             console.log($(this).attr("goto"))
             // link
@@ -46,6 +49,7 @@
             }
         })
 
+        // Date
         $("#copyright-date").append(new Date().getFullYear())
     });
 })();
