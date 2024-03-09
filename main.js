@@ -39,7 +39,7 @@
             if ($(this).attr("goto").includes("//"))
                 window.open($(this).attr("goto"), "_blank")
             else if ($(this).attr("goto").includes("/") && !$(this).attr("goto").includes("//"))
-                window.location.href = $(this).attr("goto");
+                window.location.href = `/wo-r/${$(this).attr("goto")}`;
             else if ($(this).attr("goto").includes("#")) {
                 event.preventDefault();
                 let offset = $(`${$(this).attr("goto")}`).offset().top;
