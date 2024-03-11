@@ -69,6 +69,7 @@ b {
 }
 
 a, a:link, a:visited {
+    text-decoration: underline;
     color: var(--primary) !important;
 }
 
@@ -110,4 +111,13 @@ button.follows__theme:hover {
 footer {
     background: var(--secondary);
     color: var(--opptext);
+}
+
+#list_articles a.rounded {
+    background: #766b37bc;
+    color: var(--text) !important;
+}
+
+#list_articles a.rounded:hover {
+    color: var(--text) !important;
 }

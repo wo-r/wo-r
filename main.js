@@ -58,16 +58,50 @@ $(function () {
             type: 'GET',
             success: function(data) {
                 $("#list_articles").append(`
-                    <div class="flex flex-wrap gap-10">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
                     </div>
                 `)
 
                 $.each(data, function(i, item) {
-                    var name = item.download_url;
-
-                    $('#list_articles > div').append(`
-                        <div>${name}</div>
-                    `)
+                    $.ajax({
+                        url: item.download_url,
+                        method: "GET",
+                        success: function (markdown) {
+                            var markdown_details = markdown.match(/<!--\[(.*?)\]-\[(.*?)\]-\[(.*?)\]-->/);
+                            let identifier = markdown_details[1].toLowerCase().replace(/ /g, "-");
+                            
+                            let converter = new showdown.Converter();
+                            let converted_markdown = converter.makeHtml(markdown);
+                            converted_markdown = converted_markdown.replace(/h1/g, `h1 class="text-5xl font-black"`); // h1
+                            
+                            $("#list_articles > div").append(`
+                                <a class="cursor-pointer rounded no-underline" id="${identifier}">
+                                    <div class="flex flex-col py-5 px-5">
+                                        <small>${markdown_details[3]}</small>
+                                        <h2 class="text-3xl font-black mt-2">${markdown_details[1]}</h2>
+                                        <span>${markdown_details[2]}</span>
+                                    </div>
+                                </a>
+                            `).find(`#${identifier}`).on("click", function () {
+                                $("#list_articles > div:first-child").addClass("invisible").addClass("h-0")
+                                $("#list_articles").append(`
+                                    <div>
+                                        <div class="flex flex-col gap-10">
+                                            <div class="flex flex-start">
+                                                <a class="cursor-pointer" id="back">Back</a>
+                                            </div>
+                                            <div>
+                                                ${converted_markdown}
+                                            </div>
+                                        </div>
+                                    </div>
+                                `).find("a#back").on("click", function () {
+                                    $("#list_articles > div:first-child").removeClass("invisible").removeClass("h-0");
+                                    $("#list_articles > div:last-child").remove();
+                                })
+                            });
+                        }
+                    })
                 });
             },
             error: function() {
