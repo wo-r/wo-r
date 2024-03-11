@@ -121,3 +121,7 @@ footer {
 #list_articles a.rounded:hover {
     color: var(--text) !important;
 }
+
+#list_articles pre {
+    background: rgba(118, 106, 55, 0.4);
+}

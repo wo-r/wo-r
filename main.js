@@ -8,7 +8,7 @@ $(function () {
             type: 'GET',
             success: function(data) {
                 $("#list_articles").append(`
-                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10">
                     </div>
                 `)
 
@@ -22,11 +22,12 @@ $(function () {
                             
                             let converter = new showdown.Converter();
                             let converted_markdown = converter.makeHtml(markdown);
-                            converted_markdown = converted_markdown.replace(/h1/g, `h1 class="text-5xl font-black mt-5"`); // h1
-                            converted_markdown = converted_markdown.replace(/h2/g, `h2 class="text-4xl font-black mt-5"`); // h2
-                            converted_markdown = converted_markdown.replace(/h3/g, `h3 class="text-3xl font-black mt-5"`); // h1
+                            converted_markdown = converted_markdown.replace(/h1/g, `h1 class="text-5xl leading-normal tracking-tight font-black mt-5"`); // h1
+                            converted_markdown = converted_markdown.replace(/h2/g, `h2 class="text-4xl leading-normal tracking-tight font-black mt-5"`); // h2
+                            converted_markdown = converted_markdown.replace(/h3/g, `h3 class="text-3xl leading-normal tracking-tight font-black mt-5"`); // h1
                             converted_markdown = converted_markdown.replace(/href/g, "goto"); // Href to Goto
-                            converted_markdown = converted_markdown.replace(/<a/g, `<a class="cursor-pointer underline"`) // A links
+                            converted_markdown = converted_markdown.replace(/<a/g, `<a class="cursor-pointer underline"`); // A links
+                            converted_markdown = converted_markdown.replace(/pre/g, `pre class="py-5 px-5 my-5 rounded"`); // Code blocks
 
                             $("#list_articles > div").append(`
                                 <a class="cursor-pointer rounded no-underline" id="${identifier}">
@@ -35,7 +36,6 @@ $(function () {
                                         <h2 class="text-3xl font-black mt-2">${markdown_details[1]}</h2>
                                         <span>${markdown_details[2]}</span>
                                     </div>
-                                </a>
                             `).find(`#${identifier}`).on("click", function () {
                                 $("#list_articles > div:first-child").addClass("invisible").addClass("h-0")
                                 $("#list_articles").append(`
