@@ -63,7 +63,7 @@ h1, h2, h3 {
     color: var(--primary) !important;
 }
 
-b {
+b, strong {
     font-weight: 1000 !important;
     color: var(--accent) !important;
 }
