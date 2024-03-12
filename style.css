@@ -1,101 +1,12 @@
-* {
-    overscroll-behavior: none;
-    scroll-behavior: smooth;
-}
-
-/*this may or may not be used*/
-.theme-dark {
-    --text: white;
-    --opptext: black;
-    --background: #171717;
-    --primary: #d8d2b6;
-    --secondary: #c8bc89;
-    --accent: #c3bd90;
-
-    /*rbga*/
-    --background-rgba: 23, 23, 23;
-    --primary-rgba: 216, 210, 182;
-    --secondary-rgba: 200, 188, 137;
-    --accent-rgba: 195, 189, 144;
-
-    --bg: url("./bg/dark-bg.png");
-}
-
-.theme-light {
-    --text: black;
-    --opptext: white;
-    --background: #e8e8e8;
-    --primary: #494327;
-    --secondary: #766a37;
-    --accent: #968613;
-
-    /*rgba*/
-    --background-rgba: 232, 232, 232;
-    --primary-rgba: 73, 67, 39;
-    --secondary-rgba: 118, 106, 55;
-    --accent-rgba: 150, 134, 19;
-
-    --bg: url("./bg/light-bg.png");
-}
-
-
-html, body {
-    overflow: overlay;
-    box-sizing: border-box;
-    font-family: "Assistant", monospace, sans-serif;
-    background: var(--background);
-    color: var(--text);
-    position: absolute;
-    inset: 0px;
-}
-
-.overlapped_image {
-    background-position: 100% 100%;
-    background-image: var(--bg);
-}
-
+/** custom styles **/
 ::selection {
-    color: var(--opptext);
-    background: var(--accent);
-}
-
-h1, h2, h3 {
-    color: var(--primary) !important;
-}
-
-b, strong {
-    font-weight: 1000 !important;
-    color: var(--accent) !important;
-}
-
-a, a:link, a:visited {
-    text-decoration: underline;
-    color: var(--primary) !important;
-}
-
-a:hover {
-    color: var(--secondary) !important;
-}
-
-.theme-light button {
-    color: white;
-}
-
-.theme-dark button {
     color: black;
-}
-
-button.follows__theme {
-    background: var(--primary);
-}
-
-button.follows__theme:hover {
-    background: var(--secondary);
+    background: #968613;
 }
 
 .ripple {
     position: absolute;
-    background: rgba(var(--accent-rgba), 0.8) !important;
+    background: rgba(150, 134, 19, 0.8) !important;
     border-radius: 50%;
     transform: scale(0);
     animation: ripple 600ms linear;
@@ -108,20 +19,69 @@ button.follows__theme:hover {
     }
 }
 
-footer {
-    background: var(--secondary);
-    color: var(--opptext);
+
+/** single class additions **/
+.overflow-overlay {
+    overflow: overlay;
 }
 
-#list_articles a.rounded {
-    background: #766b37bc;
-    color: var(--text) !important;
+.bg-whitish-grey {
+    background: #e8e8e8;
 }
 
-#list_articles a.rounded:hover {
-    color: var(--text) !important;
+.scrollbar-hidden::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+ 
+.scrollbar-hidden::-webkit-scrollbar-track {
+    background: transparent;
+}
+ 
+.scrollbar-hidden::-webkit-scrollbar-thumb {
+    background: transparent;
 }
 
-#list_articles pre {
-    background: rgba(118, 106, 55, 0.4);
+.font-default {
+    font-family: "Assistant", monospace, sans-serif;
+}
+
+/** These are our custom theme colors, 
+ * used throughout the website **/
+.color-primary {
+    color: #494327;
+}
+
+.bg-primary {
+    background: #494327;
+}
+
+.color-secondary {
+    color: #766a37;
+}
+
+/** Unless I can get TailwindCSS to work with node
+ * this is unfortunately how we are going to have to
+ * tackle the classings **/
+.hover\:bg-secondary:hover {
+    background: #766a37;
+}
+
+.bg-secondary {
+    background: #766a37;
+}
+
+.color-accent {
+    color: #968613;
+}
+
+.bg-accent {
+    background: #968613;
+}
+
+/** Image X represents bg/light-bg.png, this website is not designed for 
+ * dark mode **yet** so until then we will just have one classing **/
+.image-x {
+    background-image: url("./bg/light-bg.png");
+    background-position: 100% 100%;
 }
