@@ -41,7 +41,7 @@
             if ($(this).attr("goto").includes("//"))
                 window.open($(this).attr("goto"), "_blank")
             else if ($(this).attr("goto").includes("/") && !$(this).attr("goto").includes("//"))
-                window.location.href = window.location.href.includes(":") ? `${$(this).attr("goto")}` : `/wo-r${$(this).attr("goto")}`;
+                window.location.href = window.location.href.includes("https:") ? `/wo-r${$(this).attr("goto")}` : `${$(this).attr("goto")}`;
             else if ($(this).attr("goto").includes("#")) {
                 event.preventDefault();
                 let offset = $(`${$(this).attr("goto")}`).offset().top;
