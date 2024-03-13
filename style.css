@@ -1,6 +1,6 @@
 /** custom styles **/
 ::selection {
-    color: black;
+    color: white;
     background: #968613;
 }
 
@@ -52,6 +52,10 @@
     color: #494327;
 }
 
+.hover\:bg-primary:hover {
+    background: #494327;
+}
+
 .bg-primary {
     background: #494327;
 }
@@ -73,6 +77,10 @@
 
 .color-accent {
     color: #968613;
+}
+
+.hover\:bg-accent:hover {
+    background: #968613;
 }
 
 .bg-accent {
